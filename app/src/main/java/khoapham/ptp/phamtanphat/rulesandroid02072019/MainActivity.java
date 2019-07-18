@@ -16,7 +16,14 @@ public class MainActivity extends AppCompatActivity {
 //            1 : Pham vi hoat dong(access modifer)
 //            2 : Giá trị trả về cho phương thức(void cho kiểu dữ không trả về)
 //            3 : Khi đặt tên phương thức không nên viết hoa cho hành động
-        tinhsoChan(1000);
+        tinhsoChan(100);
+
+//        1 phương thức : truyền vào 1 giá trị
+//                + Trả về true nếu là số nguyên tố
+//                + Trả về false nếu ngược lại
+
+        boolean check = tinhSonguyento(100);
+        Log.d("BBB", String.valueOf(check));
     }
     private void tinhsoChan(int size){
         for (int i = 0 ; i< size ; i++){
@@ -25,5 +32,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    private Boolean tinhSonguyento(int number){
+        if (number <2) return  false;
+        for (int i = 2 ; i < number / 2 ; i++){
+            if (number % i == 0) return false;
+        }
+        return true;
+    }
+
 
 }
