@@ -13,13 +13,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int tong = tinhTong(5, 6);
-        Log.d("BBB", String.valueOf(tong));
+        // phuong thuc :
+//            1 : Pham vi hoat dong(access modifer)
+//            2 : Giá trị trả về cho phương thức(void cho kiểu dữ không trả về)
+//            3 : Khi đặt tên phương thức không nên viết hoa cho hành động
+
 
     }
-    private int tinhTong(int a , int b){
-        int ketqua = a + b;
-        return ketqua;
-    }
+
 
 }
